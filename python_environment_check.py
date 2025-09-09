@@ -1,7 +1,15 @@
 import sys
-from distutils.version import LooseVersion
+# from distutils.version import LooseVersion
 
-if LooseVersion(sys.version) < LooseVersion('3.8'):
+# if LooseVersion(sys.version) < LooseVersion('3.8'):
+#     print('[FAIL] We recommend Python 3.8 or newer but'
+#           ' found version %s' % (sys.version))
+# else:
+#     print('[OK] Your Python version is %s' % (sys.version))
+
+from packaging.version import Version
+
+if Version(sys.version.split()[0]) < Version('3.8'):
     print('[FAIL] We recommend Python 3.8 or newer but'
           ' found version %s' % (sys.version))
 else:
@@ -36,7 +44,8 @@ def check_packages(d):
     for (pkg_name, suggested_ver), actual_ver in zip(d.items(), versions):
         if actual_ver == 'N/A':
             continue
-        actual_ver, suggested_ver = LooseVersion(actual_ver), LooseVersion(suggested_ver)
+        #actual_ver, suggested_ver = LooseVersion(actual_ver), LooseVersion(suggested_ver)
+        actual_ver, suggested_ver = Version(actual_ver), Version(suggested_ver)
         if actual_ver < suggested_ver:
             print(f'[FAIL] {pkg_name} {actual_ver}, please upgrade to >= {suggested_ver}')
         else:

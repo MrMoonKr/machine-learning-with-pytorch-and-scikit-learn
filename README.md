@@ -1,3 +1,12 @@
+# WIP
+- PyTorch 연습용
+- VS Code 환경
+- Python 3.12.0
+- venv 환경
+- 설치 모둘 : ipykernel, numpy, scipy, matplotlib, scikit-learn, pandas
+- ...
+
+
 # 머신 러닝 교과서: 파이토치 편
 
 온라인 서점에서 판매 중입니다! [Yes24](https://www.yes24.com/Product/Goods/123802975), 교보문고, [알라딘](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=329349411)
