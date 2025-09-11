@@ -1,11 +1,11 @@
-# WIP
-- PyTorch 연습용
-- VS Code 환경
-- Python 3.12.0
-- venv 환경
-- 설치 모둘 : ipykernel, numpy, scipy, matplotlib, scikit-learn, pandas
-- ...
+# 책 부록 소스 프로젝트 입니다
 
+- 직무 교육( OJT, On the job Training )을 위해서 생성.  
+- 진행중( WIP, Work on Progress ).  
+  + 머신러닝 자료 정리...  
+  + ...
+
+---
 
 # 머신 러닝 교과서: 파이토치 편
 
